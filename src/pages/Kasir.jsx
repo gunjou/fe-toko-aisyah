@@ -149,7 +149,7 @@ const Kasir = () => {
   <body onload="window.print(); window.close();">
     <div class="struk">
       <img class="logo" src="${logoBase64}" alt="logo" />
-      <div class="struk-header">TOKO YANI</div>
+      <div class="struk-header">TOKO AISYAH</div>
       <div class="subheader">Tanggal: ${tanggalStr}</div>
       ${printContents}
       <div class="thankyou">-- Terima kasih telah berbelanja --</div>
@@ -185,7 +185,7 @@ const Kasir = () => {
   const SortIcon = ({ active, asc }) => (
     <svg
       className={`w-3 h-3 ms-1.5 inline ${
-        active ? "text-[#FF4778]" : "text-gray-400"
+        active ? "text-[#344c36]" : "text-gray-400"
       }`}
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
@@ -874,7 +874,7 @@ const Kasir = () => {
         </div>
         <div className="flex items-center gap-2 mt-2 mb-4">
           <button
-            className="bg-[#FF4778] p-2 rounded-[10px] text-xs text-white hover:bg-[#FF87A7]"
+            className="bg-[#344c36] p-2 rounded-[10px] text-xs text-white hover:bg-[#2a3b29]"
             onClick={() => setBarangModalOpen(true)}
           >
             Lihat Daftar Produk
@@ -888,13 +888,13 @@ const Kasir = () => {
           {/* Input scan barcode/QR */}
           <div className="relative">
             <span className="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-              <IoQrCodeOutline size={20} className="text-[#FF4778]" />
+              <IoQrCodeOutline size={20} className="text-[#344c36]" />
             </span>
             <input
               ref={scanInputRef}
               type="text"
               placeholder="Scan/masukkan barcode..."
-              className="border border-black rounded-[10px] px-2 py-1.5 text-sm w-56 hover:border-[#FF4778] focus:outline-none focus:ring-2 focus:ring-[#FF4778] pl-8"
+              className="border border-black rounded-[10px] px-2 py-1.5 text-sm w-56 hover:border-[#344c36] focus:outline-none focus:ring-2 focus:ring-[#344c36] pl-8"
               onKeyDown={(e) => {
                 if (e.key === "Enter" && e.target.value.trim()) {
                   const kode = e.target.value.trim();
@@ -959,7 +959,7 @@ const Kasir = () => {
         </div>
 
         {/*  Tabel pembelian */}
-        <div className="bg-white h-[450px] rounded-lg p-2 shadow-md border border-[#FF4778]">
+        <div className="bg-white h-[450px] rounded-lg p-2 shadow-md border border-[#344c36]">
           <div
             className="relative overflow-x-auto"
             style={{ maxHeight: "450px", overflowY: "auto" }}
@@ -1225,7 +1225,7 @@ const Kasir = () => {
                       </div>
                       <button
                         type="button"
-                        className="mt-2 md:mt-0 bg-[#FF4778] hover:bg-[#FF87A7] text-white px-4 py-1 rounded-[10px] text-xs"
+                        className="mt-2 md:mt-0 bg-[#344c36] hover:bg-[#2a3b29] text-white px-4 py-1 rounded-[10px] text-xs"
                         onClick={() => {
                           setNewItem((prev) => ({
                             ...prev,
@@ -1425,7 +1425,7 @@ const Kasir = () => {
                                   });
                                   setBarangModalOpen(false);
                                 }}
-                                className="bg-[#FF4778] hover:bg-green-600 text-white px-3 py-1 rounded-[10px] text-xs"
+                                className="bg-[#344c36] hover:bg-green-600 text-white px-3 py-1 rounded-[10px] text-xs"
                               >
                                 Pilih
                               </button>
@@ -1595,7 +1595,7 @@ const Kasir = () => {
                           </td>
                           <td className="px-2 py-1">
                             <button
-                              className="bg-[#FF4778] hover:bg-[#FF87A7] text-white px-3 py-1 rounded-[10px] text-xs"
+                              className="bg-[#344c36] hover:bg-[#2a3b29] text-white px-3 py-1 rounded-[10px] text-xs"
                               onClick={() =>
                                 openDetailTransaksi(item.id_transaksi)
                               }
@@ -1676,7 +1676,7 @@ const Kasir = () => {
                   </button>
                   <button
                     type="submit"
-                    className="px-4 py-1 text-sm rounded-[10px] bg-[#FF4778] hover:bg-[#FF87A7] text-white"
+                    className="px-4 py-1 text-sm rounded-[10px] bg-[#344c36] hover:bg-[#2a3b29] text-white"
                   >
                     Simpan
                   </button>

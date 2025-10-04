@@ -52,14 +52,14 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
 
   return (
     <div
-      className={`h-screen bg-[#FF4778] text-white transition-all duration-300 ${
+      className={`h-screen bg-[#344c36] text-white transition-all duration-300 ${
         isOpen ? "w-64" : "w-16"
       } flex flex-col`}
     >
       {/* Header */}
       <div className="flex flex-col gap-1 p-4">
         <div className="flex items-center justify-between">
-          {isOpen && <h1 className="text-lg font-bold">TOKO YANI</h1>}
+          {isOpen && <h1 className="text-lg font-bold">TOKO AISYAH</h1>}
 
           <button onClick={() => setIsOpen(!isOpen)} className="text-white">
             {isOpen ? <X size={20} /> : <Menu size={30} />}
@@ -81,7 +81,7 @@ const Sidebar = ({ isOpen, setIsOpen }) => {
               [
                 "w-full flex items-center gap-3 text-left p-3 rounded-lg transition",
                 isActive
-                  ? "bg-[#FF87A7] text-white font-bold"
+                  ? "bg-[#feae17] text-white font-bold"
                   : "bg-white text-black hover:bg-[#D8D8D8]",
               ].join(" ")
             }

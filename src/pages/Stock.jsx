@@ -444,7 +444,7 @@ const Stock = () => {
   const SortIcon = ({ active, asc }) => (
     <svg
       className={`w-3 h-3 ms-1.5 inline ${
-        active ? "text-[#FF4778]" : "text-gray-400"
+        active ? "text-[#344c36]" : "text-gray-400"
       }`}
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
@@ -723,13 +723,13 @@ const Stock = () => {
 
           <div className="relative">
             <span className="absolute inset-y-0 left-0 flex items-center pl-2 pointer-events-none">
-              <IoQrCodeOutline size={20} className="text-[#FF4778]" />
+              <IoQrCodeOutline size={20} className="text-[#344c36]" />
             </span>
             <input
               ref={scanInputRef}
               type="text"
               placeholder="Scan/masukkan barcode..."
-              className="border rounded-[10px] px-2 py-1.5 text-sm w-[210px] hover:border-[#FF4778] focus:outline-none focus:ring-2 focus:ring-[#FF4778] pl-8"
+              className="border rounded-[10px] px-2 py-1.5 text-sm w-[210px] hover:border-[#344c36] focus:outline-none focus:ring-2 focus:ring-[#344c36] pl-8"
               onKeyDown={(e) => {
                 if (e.key === "Enter" && e.target.value.trim()) {
                   const barcode = e.target.value.trim();
@@ -779,7 +779,7 @@ const Stock = () => {
               <input
                 type="search"
                 id="default-search"
-                class="block w-50 p-2 ps-10 text-sm text-gray-900 border border-[#FF4778] rounded-[15px] bg-gray-50 focus:ring-[#FF4778] focus:border-[#FF4778] "
+                class="block w-50 p-2 ps-10 text-sm text-gray-900 border border-[#344c36] rounded-[15px] bg-gray-50 focus:ring-[#344c36] focus:border-[#344c36] "
                 placeholder="Cari barang..."
                 required
                 value={search}
@@ -790,7 +790,7 @@ const Stock = () => {
               <select
                 value={selectedLokasi}
                 onChange={(e) => setSelectedLokasi(e.target.value)}
-                className="border border-[#FF4778] rounded-[15px] text-sm px-3 py-2 hover:border-[#FF4778] focus:outline-none focus:ring-2 focus:ring-[#FF4778]  capitalize"
+                className="border border-[#344c36] rounded-[15px] text-sm px-3 py-2 hover:border-[#344c36] focus:outline-none focus:ring-2 focus:ring-[#344c36]  capitalize"
               >
                 {lokasiList.map((lokasi) => (
                   <option key={lokasi.id_lokasi} value={lokasi.id_lokasi}>
@@ -940,7 +940,7 @@ const Stock = () => {
                       <td className="px-0.5 py-0.5 text-center">
                         {!readOnly && (
                           <button
-                            className="bg-[#FF4778] hover:bg-[#FF87A7] text-white px-1 py-1 rounded-[10px] text-xs"
+                            className="bg-[#344c36] hover:bg-[#2a3b29] text-white px-1 py-1 rounded-[10px] text-xs"
                             onClick={() => handleAddToMutasi(item)}
                             title="Mutasi"
                           >
@@ -1019,7 +1019,7 @@ const Stock = () => {
         <div className="flex items-center justify-between mt-4">
           <div className="flex space-x-2">
             <button
-              className="bg-[#FF4778] p-2 rounded-[10px] text-xs text-white hover:bg-[#FF87A7]"
+              className="bg-[#344c36] p-2 rounded-[10px] text-xs text-white hover:bg-[#2a3b29]"
               onClick={openAddModal}
             >
               Tambah Stock Barang
@@ -1041,7 +1041,7 @@ const Stock = () => {
             </button>
           </div>
         </div>
-        <div className="bg-white border border-[#FF4778] rounded-lg p-2 shadow-md mt-4">
+        <div className="bg-white border border-[#344c36] rounded-lg p-2 shadow-md mt-4">
           <div
             className="relative overflow-x-auto"
             style={{ maxHeight: "170px", overflowY: "auto" }}
@@ -1112,7 +1112,7 @@ const Stock = () => {
                 </table>
                 <div className="flex justify-end mt-2">
                   <button
-                    className="bg-[#FF4778] hover:bg-green-600 text-white px-4 py-1 rounded text-xs"
+                    className="bg-[#344c36] hover:bg-green-600 text-white px-4 py-1 rounded text-xs"
                     onClick={openMutasiModal}
                   >
                     Kirim
@@ -1214,7 +1214,7 @@ const Stock = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1 text-sm rounded-[10px] bg-[#FF4778] hover:bg-green-600 text-white"
+                  className="px-4 py-1 text-sm rounded-[10px] bg-[#344c36] hover:bg-green-600 text-white"
                 >
                   Simpan
                 </button>
@@ -1319,7 +1319,7 @@ const Stock = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1 text-sm rounded-[10px] bg-[#FF4778] hover:bg-green-600 text-white"
+                  className="px-4 py-1 text-sm rounded-[10px] bg-[#344c36] hover:bg-green-600 text-white"
                 >
                   Simpan
                 </button>
@@ -1379,7 +1379,7 @@ const Stock = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1 text-sm rounded-[10px] bg-[#FF4778] hover:bg-green-600 text-white"
+                  className="px-4 py-1 text-sm rounded-[10px] bg-[#344c36] hover:bg-green-600 text-white"
                   onClick={handleMutasiSubmit}
                 >
                   Simpan

@@ -51,7 +51,7 @@ function Login() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col md:flex-row bg-gradient-to-b from-[#FF4778] to-[#FF87A7] relative">
+    <div className="min-h-screen flex flex-col md:flex-row bg-gradient-to-b from-[#f2ece0] to-[#344c36] relative">
       {/* Wave image at the bottom */}
       <img
         src="images/wave.png"
@@ -118,7 +118,7 @@ function Login() {
             </div> */}
             <button
               type="submit"
-              className="w-full px-4 py-2 mt-8 text-white rounded-lg bg-[#B63E5D] rounded-[15px] hover:bg-[#F472B6] transition"
+              className="w-full px-4 py-2 mt-8 text-white rounded-lg bg-[#feae17] rounded-[15px] hover:bg-yellow-400 transition"
               disabled={loading}
             >
               {loading ? "Memproses..." : "Login"}
@@ -144,7 +144,7 @@ function Login() {
         <div className="text-center">
           {/* <h1 className="text-3xl font-bold text-white">TOKO YANI</h1> */}
           <img
-            src="images/tokoyani.png"
+            src="images/icon.png"
             alt="Login Illustration"
             className="w-80 h-auto mt-4 mb-4"
           />

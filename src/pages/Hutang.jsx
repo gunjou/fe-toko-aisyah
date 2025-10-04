@@ -175,7 +175,7 @@ const Hutang = () => {
   const SortIcon = ({ active, asc }) => (
     <svg
       className={`w-3 h-3 ms-1.5 inline ${
-        active ? "text-[#FF4778]" : "text-gray-400"
+        active ? "text-[#344c36]" : "text-gray-400"
       }`}
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
@@ -338,7 +338,7 @@ const Hutang = () => {
                   />
                   <button
                     type="button"
-                    className="absolute right-2 top-1/2 -translate-y-1/2 text-[#FF4778] hover:text-[#FF87A7]"
+                    className="absolute right-2 top-1/2 -translate-y-1/2 text-[#344c36] hover:text-[#2a3b29]"
                     title="Pilih dari daftar pelanggan"
                     onClick={() => setModalPilihPelanggan(true)}
                   >
@@ -383,7 +383,7 @@ const Hutang = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1 text-sm rounded-[10px] bg-[#FF4778] hover:bg-[#FF87A7] text-white"
+                  className="px-4 py-1 text-sm rounded-[10px] bg-[#344c36] hover:bg-[#2a3b29] text-white"
                   disabled={hutangBaruLoading}
                 >
                   {hutangBaruLoading ? "Menyimpan..." : "Tambah"}
@@ -453,7 +453,7 @@ const Hutang = () => {
                           </div>
                           <button
                             type="button"
-                            className="mt-2 md:mt-0 bg-[#FF4778] hover:bg-[#FF87A7] text-white px-4 py-1 rounded-[10px] text-xs"
+                            className="mt-2 md:mt-0 bg-[#344c36] hover:bg-[#2a3b29] text-white px-4 py-1 rounded-[10px] text-xs"
                             onClick={() => {
                               setHutangBaruPelanggan(item);
                               setModalPilihPelanggan(false);
@@ -535,7 +535,7 @@ const Hutang = () => {
                         </button>
                         <button
                           type="submit"
-                          className="px-4 py-1 text-sm rounded-lg bg-[#FF4778] hover:bg-green-600 text-white"
+                          className="px-4 py-1 text-sm rounded-lg bg-[#344c36] hover:bg-green-600 text-white"
                           disabled={tambahPelangganLoading}
                         >
                           Simpan
@@ -609,7 +609,7 @@ const Hutang = () => {
                 </button>
                 <button
                   type="submit"
-                  className="px-4 py-1 text-sm rounded-lg bg-[#FF4778] hover:bg-[#FF87A7] text-white"
+                  className="px-4 py-1 text-sm rounded-lg bg-[#344c36] hover:bg-[#2a3b29] text-white"
                   disabled={tambahHutangLoading}
                 >
                   {tambahHutangLoading ? "Menyimpan..." : "Tambah"}
@@ -833,7 +833,7 @@ const Hutang = () => {
                           </td>
                           <td className="px-1 py-1 text-center">
                             <button
-                              className="bg-[#FF4778] hover:bg-[#FF87A7] text-white px-3 py-1 rounded-[10px] text-xs mr-2"
+                              className="bg-[#344c36] hover:bg-[#2a3b29] text-white px-3 py-1 rounded-[10px] text-xs mr-2"
                               onClick={() => openModalTambahHutang(item)}
                             >
                               Tambah
@@ -855,7 +855,7 @@ const Hutang = () => {
           </div>
           <div className="flex justify-left pt-4">
             <button
-              className="bg-[#FF4778] hover:bg-[#FF87A7] text-white px-4 py-2 rounded-[10px] text-xs font-semibold"
+              className="bg-[#344c36] hover:bg-[#2a3b29] text-white px-4 py-2 rounded-[10px] text-xs font-semibold"
               onClick={openModalTambahHutangBaru}
             >
               Tambah Hutang

@@ -202,7 +202,7 @@ const Laporan = () => {
   const SortIcon = ({ active, asc }) => (
     <svg
       className={`w-3 h-3 ms-1.5 inline ${
-        active ? "text-[#FF4778]" : "text-gray-400"
+        active ? "text-[#344c36]" : "text-gray-400"
       }`}
       aria-hidden="true"
       xmlns="http://www.w3.org/2000/svg"
@@ -464,12 +464,12 @@ const Laporan = () => {
         <div
           className={`flex-1 cursor-pointer rounded-xl shadow-md p-6 flex flex-col items-center transition border-2 ${
             activeTab === "item"
-              ? "border-[#FF4778] bg-[#e6f6f7]"
+              ? "border-[#344c36] bg-[#e6f6f7]"
               : "border-gray-200 bg-white"
           }`}
           onClick={() => setActiveTab("item")}
         >
-          <FaShoppingCart size={36} className="mb-2 text-[#FF4778]" />
+          <FaShoppingCart size={36} className="mb-2 text-[#344c36]" />
           <div className="font-semibold text-lg">Laporan Item</div>
           <div className="text-xs text-gray-500 text-center">
             Penjualan per produk
@@ -479,12 +479,12 @@ const Laporan = () => {
         <div
           className={`flex-1 cursor-pointer rounded-xl shadow-md p-6 flex flex-col items-center transition border-2 ${
             activeTab === "transaksi"
-              ? "border-[#FF4778] bg-[#e6f6f7]"
+              ? "border-[#344c36] bg-[#e6f6f7]"
               : "border-gray-200 bg-white"
           }`}
           onClick={() => setActiveTab("transaksi")}
         >
-          <FaClipboardList size={36} className="mb-2 text-[#FF4778]" />
+          <FaClipboardList size={36} className="mb-2 text-[#344c36]" />
           <div className="font-semibold text-lg">Laporan Transaksi</div>
           <div className="text-xs text-gray-500 text-center">
             Rekap transaksi penjualan
@@ -494,12 +494,12 @@ const Laporan = () => {
         <div
           className={`flex-1 cursor-pointer rounded-xl shadow-md p-6 flex flex-col items-center transition border-2 ${
             activeTab === "stok"
-              ? "border-[#FF4778] bg-[#e6f6f7]"
+              ? "border-[#344c36] bg-[#e6f6f7]"
               : "border-gray-200 bg-white"
           }`}
           onClick={() => setActiveTab("stok")}
         >
-          <FaBoxOpen size={36} className="mb-2 text-[#FF4778]" />
+          <FaBoxOpen size={36} className="mb-2 text-[#344c36]" />
           <div className="font-semibold text-lg">Laporan Stok</div>
           <div className="text-xs text-gray-500 text-center">
             Stok barang terkini
@@ -510,7 +510,7 @@ const Laporan = () => {
       {/* Tombol Unduh PDF */}
       <div className="flex justify-end mb-2">
         <button
-          className="bg-[#FF4778] hover:bg-[#FF87A7] text-white px-4 py-2 rounded-lg text-sm font-semibold"
+          className="bg-[#344c36] hover:bg-[#2a3b29] text-white px-4 py-2 rounded-lg text-sm font-semibold"
           onClick={handleDownloadPDF}
         >
           Unduh PDF
@@ -601,7 +601,7 @@ const Laporan = () => {
 
             {/* Tabel Laporan Item */}
             <div
-              className="relative overflow-x-auto shadow-md sm:rounded-lg border border-[#FF4778]"
+              className="relative overflow-x-auto shadow-md sm:rounded-lg border border-[#344c36]"
               style={{ maxHeight: "300px", overflowY: "auto" }}
             >
               <table className="w-full text-sm text-left text-gray-500">
@@ -850,7 +850,7 @@ const Laporan = () => {
             </div>
 
             <div
-              className="relative overflow-x-auto shadow-md sm:rounded-lg border border-[#FF4778]"
+              className="relative overflow-x-auto shadow-md sm:rounded-lg border border-[#344c36]"
               style={{ maxHeight: "300px", overflowY: "auto" }}
             >
               <table className="w-full text-sm text-left text-gray-500">
@@ -1099,7 +1099,7 @@ const Laporan = () => {
             </div>
             {/* Tabel Laporan Stok */}
             <div
-              className="relative overflow-x-auto shadow-md sm:rounded-lg border border-[#FF4778]"
+              className="relative overflow-x-auto shadow-md sm:rounded-lg border border-[#344c36]"
               style={{ maxHeight: "300px", overflowY: "auto" }}
             >
               <table className="w-full text-sm text-left text-gray-500">

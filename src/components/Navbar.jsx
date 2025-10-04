@@ -36,11 +36,11 @@ const Navbar = ({ isSidebarOpen }) => {
       {/* Sembunyikan teks jika sidebar terbuka */}
 
       <h2
-        className={`flex items-center gap-2 bg-[#FF4778] text-white px-3 py-1 rounded-[10px] font-semibold ${
+        className={`flex items-center gap-2 bg-[#feae17] text-white px-3 py-1 rounded-[10px] font-semibold ${
           isSidebarOpen ? "invisible" : ""
         }`}
       >
-        TOKO YANI
+        TOKO AISYAH
       </h2>
 
       <div className="flex items-center gap-4">
@@ -49,7 +49,7 @@ const Navbar = ({ isSidebarOpen }) => {
           alt="avatar"
           className="w-8 h-8 rounded-full"
         /> */}
-        <div className="w-8 h-8 rounded-full bg-[#FF4778] flex items-center justify-center text-white font-bold">
+        <div className="w-8 h-8 rounded-full bg-[#feae17] flex items-center justify-center text-white font-bold">
           {user.nama.charAt(0).toUpperCase()}
         </div>
 
@@ -60,7 +60,7 @@ const Navbar = ({ isSidebarOpen }) => {
           </span>
         </div>
         <button
-          className="flex items-center gap-1 text-bold text-[#FF4778] hover:text-red-600 transition"
+          className="flex items-center gap-1 text-bold text-[#feae17] hover:text-red-600 transition"
           onClick={() => {
             const confirmLogout = window.confirm("Anda yakin ingin logout?");
             if (confirmLogout) {
