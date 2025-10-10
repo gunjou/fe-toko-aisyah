@@ -959,10 +959,10 @@ const Kasir = () => {
         </div>
 
         {/*  Tabel pembelian */}
-        <div className="bg-white h-[450px] rounded-lg p-2 shadow-md border border-[#344c36]">
+        <div className="bg-white rounded-lg p-2 shadow-md border border-[#344c36]">
           <div
             className="relative overflow-x-auto"
-            style={{ maxHeight: "450px", overflowY: "auto" }}
+            style={{ maxHeight: "170px", overflowY: "auto" }}
           >
             {dataPembelian.length === 0 ? (
               <div className="text-center text-gray-400 py-[225px]">
@@ -1332,8 +1332,8 @@ const Kasir = () => {
               </form>
 
               <div
-                className="relative overflow-x-auto widh shadow-md sm:rounded-lg"
-                style={{ maxHeight: "450px", overflowY: "auto" }}
+                className="relative overflow-x-auto shadow-md sm:rounded-lg"
+                style={{ maxHeight: "250px", overflowY: "auto" }}
               >
                 {produkLoading ? (
                   <div className="text-center py-8">Memuat data...</div>
